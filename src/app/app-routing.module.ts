@@ -28,6 +28,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./exchanges/exchanges.module').then((m) => m.ExchangeGameModule),
   },
+  {
+    path: 'reports',
+    loadChildren: () =>
+      import('./reports/repots.module').then((m) => m.ReportsModule),
+  },
   
 ];
 

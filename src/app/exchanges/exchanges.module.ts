@@ -12,6 +12,18 @@ import { OnedayComponent } from './oneday/oneday.component';
 import { MuflisComponent } from './muflis/muflis.component';
 import { T20Component } from './t20/t20.component';
 import { CasinometerComponent } from './casinometer/casinometer.component';
+import { AmarAkbarComponent } from "./amar-akbar/AmarAkbarComponent";
+import { TeenVirtualComponent } from './teen-virtual/teen-virtual.component';
+import { T20VirtuallComponent } from './t20-virtuall/t20-virtuall.component';
+import { UpDownVirtualComponent } from './up-down-virtual/up-down-virtual.component';
+import { CardVirtualComponent } from './card-virtual/card-virtual.component';
+import { AnderBaharVirtualComponent } from './ander-bahar-virtual/ander-bahar-virtual.component';
+import { RouletteVirtualComponent } from './roulette-virtual/roulette-virtual.component';
+import { TigerVirtualComponent } from './tiger-virtual/tiger-virtual.component';
+import { PokerVirtualComponent } from './poker-virtual/poker-virtual.component';
+import { AmarAkbarVirtualComponent } from './amar-akbar-virtual/amar-akbar-virtual.component';
+import { SixPokerVirtualComponent } from './six-poker-virtual/six-poker-virtual.component';
+
 
 const routes: Routes = [
   {path:'teenpatti', component: TeenpattiComponent,},
@@ -26,6 +38,19 @@ const routes: Routes = [
   {path:'t20', component: T20Component ,},
    {path:'t20', component: T20Component ,},
    {path:'meter', component: CasinometerComponent ,},
+   {path:'amar-akbar', component: AmarAkbarComponent ,},
+   {path:'teen-virtual', component:  TeenVirtualComponent ,},
+   {path:'t20-virtual', component: T20VirtuallComponent ,},
+   {path:'up-virtual', component: UpDownVirtualComponent ,},
+   {path:'card-virtual', component: CardVirtualComponent,},
+   {path:'ander-virtual', component:  AnderBaharVirtualComponent,},
+
+   {path:'roulette-virtual', component:   RouletteVirtualComponent,},
+   {path:'tiger-virtual', component: TigerVirtualComponent,},
+   {path:'poker-virtual', component: PokerVirtualComponent,},
+   {path:'amar-akbar-virtual', component:  AmarAkbarVirtualComponent,},
+   {path:'six-poker-virtual', component:  SixPokerVirtualComponent,},
+ 
 ]
 
 @NgModule({
@@ -40,7 +65,19 @@ const routes: Routes = [
     OnedayComponent,
     MuflisComponent,
     T20Component,
-    CasinometerComponent
+    CasinometerComponent,
+    AmarAkbarComponent,
+    TeenVirtualComponent,
+    T20VirtuallComponent,
+    UpDownVirtualComponent,
+    CardVirtualComponent,
+    AnderBaharVirtualComponent,
+    RouletteVirtualComponent,
+    TigerVirtualComponent,
+    PokerVirtualComponent,
+    AmarAkbarVirtualComponent,
+    SixPokerVirtualComponent,
+  
   ],
   imports: [
     CommonModule,

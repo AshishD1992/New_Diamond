@@ -10,6 +10,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 
 import { HomeComponent } from './home/home.component';
+import { ReportsComponent } from './reports/reports.component';
 
 
 
@@ -24,6 +25,7 @@ import { HomeComponent } from './home/home.component';
     FooterComponent,
     
     HomeComponent,
+          ReportsComponent,
          
     
   ],

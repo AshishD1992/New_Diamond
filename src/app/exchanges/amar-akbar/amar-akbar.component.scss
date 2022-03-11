@@ -4,38 +4,34 @@
     width: 384px;
     background-color: #fff;
     padding: 0;
-    transform: translate3d(0px, -875px, 0px);
+    transform: translate3d(0px, -674px, 0px);
     padding-left: 4px;
     margin-left: 956px;
 }
-.casino-meter {
-    background: #ccc;
-    margin-bottom: 8px;
-    height: 73px;
-}
 .casino_odds {
-    background: none;
-    width: 344px;
-    margin-left: 12px;
+    padding: 10px;
+    margin-bottom: 7px;
 }
-.mcb-sec {
+.casino_odds .row {
+    border: none;
+}
+.btn-group {
+    display: block;
+}
+.back-extra {
+    color: #fff!important;
     background-image: linear-gradient(to right,var(--primary),var(--secondary))!important;
     width: 100%!important;
     border-radius: 4px!important;
     box-shadow: 0 2px 2px 0 #00000024,0 3px 1px -2px #0000001f,0 1px 5px 0 #0003!important;
     border: 0!important;
-    padding: 8px 10px!important;
+    padding: 4px 10px!important;
     cursor: pointer!important;
     font-size: 16px!important;
     position: relative;
-    margin-bottom: 5px;
 }
-.meter-card-set{
-    text-align: center;
-    color: #fff;
-}
-@media (min-width: 1200px){
-.h3, h3 {
-    font-size: 1.75rem;
-}
+.back7{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
 }
