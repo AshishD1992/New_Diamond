@@ -11,7 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { HomeComponent } from './home/home.component';
 import { ReportsComponent } from './reports/reports.component';
-
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 
 
@@ -31,7 +31,8 @@ import { ReportsComponent } from './reports/reports.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BsDatepickerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
