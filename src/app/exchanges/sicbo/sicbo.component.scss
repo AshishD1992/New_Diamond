@@ -200,3 +200,24 @@
     flex-wrap: nowrap;
     border-radius: 7px;
 }
+
+.casino-result-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sicbo-live-result-block__image--left {
+    transform: rotate(-15deg);
+    margin-top: 15px;
+}
+
+.sicbo-live-result-block__image {
+    width: 45px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    box-shadow: -1px 1px 15px 4px #ffffff4d;
+    border-radius: 10px;
+}
+.casino-result-c img {
+    margin: 0 5px;
+}

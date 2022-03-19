@@ -12,7 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ReportsComponent } from './reports/reports.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
-
+import { RulesComponent } from './rules/rules.component';
 
 
 @NgModule({
@@ -26,6 +26,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     
     HomeComponent,
           ReportsComponent,
+          RulesComponent,
+         
          
     
   ],

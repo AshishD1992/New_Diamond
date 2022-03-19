@@ -72,3 +72,16 @@ margin: 0;
     padding: 0;
     list-style: none;
 }
+@media (max-width: 767px){
+    #sidebar {
+        z-index: 999;
+        position: absolute;
+        width: 210px;
+        height: 160%;
+        left: 0px;
+        overflow-y: auto;
+        background: #bbb;
+        transition: all 0.5s ease;
+        display: none;
+    }
+}
