@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
-import { HeaderComponent } from './header/header.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
-import { FooterComponent } from './footer/footer.component';
 
+
+import { FooterComponent } from './footer/footer.component';
+import { SharedModule } from './shared.module';
 import { HomeComponent } from './home/home.component';
 import { ReportsComponent } from './reports/reports.component';
+
+
 
 
 
@@ -19,9 +20,7 @@ import { ReportsComponent } from './reports/reports.component';
   declarations: [
     AppComponent,
     LoginComponent,
-    HeaderComponent,
-    NavbarComponent,
-    SidenavComponent,
+  
     FooterComponent,
     
     HomeComponent,
@@ -31,8 +30,14 @@ import { ReportsComponent } from './reports/reports.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    SharedModule
+
+    
   ],
+
+
   providers: [],
   bootstrap: [AppComponent]
 })

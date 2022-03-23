@@ -101,7 +101,6 @@
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
-        
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -112,5 +111,8 @@
       }
     }
   },
-  "defaultProject": "diamond"
+  "defaultProject": "diamond",
+  "cli": {
+    "analytics": false
+  }
 }
