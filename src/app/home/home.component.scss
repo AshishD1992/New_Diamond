@@ -40,7 +40,8 @@
     // box-shadow: 8px 12px 25px 2px rgba(0, 0, 0, 0.4);
 }
 @media only screen and (max-width: 650px){
-    .tab .nav-tabs li{ width:100%; }
+    .tab .nav-tabs li{ display: inline-flex; }
+   
     .tab .nav-tabs li a{
         margin:0;
         padding:20px 45px;
@@ -324,9 +325,9 @@ button {
     margin-top: 40px;
     margin-left: 227px;
 }
-// .dash_casino h2 {
-//     display: none;
-// }
+.dash_casino h2 {
+    display: none;
+}
 // @media (min-width: 1200px){
 // .h2, h2 {
 //     font-size: 2rem;
@@ -384,3 +385,79 @@ img, svg {
     font-size: 9px;
 }
 
+@media (max-width: 767px){
+.dash_casino {
+    text-align: center;
+    padding-top: 20px;
+    background: #f1f5f8;
+    margin: 0;
+}
+}
+@media (max-width: 991px){
+.dash_casino h2 {
+    padding-left: 4px;
+    text-transform: uppercase;
+    color: #000;
+    display: block;
+    text-align: left;
+    font-size: 18px;
+}}
+// @media (max-width: 767px){
+// // .user_screen, tabset.rules-page, .dash_casino {
+// //     margin: 0 0 68px;
+// // }
+// // }
+@media (max-width: 767px){
+.casinoicons {
+    margin-right: 8px;
+}
+}
+@media (max-width: 767px){
+.casinoname {
+    padding: 4px;
+    font-size: 9px;
+}
+}
+@media (max-width: 767px){
+.casinoicons img {
+    width: 84px !important;
+}
+}
+@media (max-width: 767px){
+    .container {
+        margin-left: 0px;
+    }
+    }
+    @media (max-width: 767px){
+        
+
+.tab .nav-tabs{
+       overflow-x: auto;
+    -webkit-overflow-scrolling: overlay;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    white-space: nowrap;
+    white-space: -moz-nowrap !important;
+    white-space: -hp-nowrap;
+    white-space: -o-nowrap;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    /* display: block; */
+    margin: 0px;
+        }
+    }
+    @media (max-width: 767px){
+        .row {
+            --bs-gutter-x: 1.5rem;
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: calc(-1 * var(--bs-gutter-y));
+            margin-right: calc(-1.1 * var(--bs-gutter-x));
+            margin-left: calc(-1.5 * var(--bs-gutter-x));
+        }
+        }
+       

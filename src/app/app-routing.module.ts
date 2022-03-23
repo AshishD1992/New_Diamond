@@ -5,8 +5,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 
 import { FooterComponent } from './footer/footer.component';
-
 import { HomeComponent } from './home/home.component';
+import { RulesComponent } from './rules/rules.component';
 
 const routes: Routes = [
 
@@ -17,7 +17,7 @@ const routes: Routes = [
  
  
   {path:'footer', component: FooterComponent,},
-
+  {path:'rules', component:  RulesComponent,},
   {
     path: 'sports',
     loadChildren: () =>

@@ -11,6 +11,7 @@ const routes: Routes = [
     AaccountStatementComponent
   ],
     imports: [
+      
         CommonModule,
         RouterModule.forChild(routes),
       ],
