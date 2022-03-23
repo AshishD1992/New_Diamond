@@ -13,6 +13,12 @@ import { HomeComponent } from './home/home.component';
 import { ReportsComponent } from './reports/reports.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { RulesComponent } from './rules/rules.component';
+import { SetButtonValueComponent } from './set-button-value/set-button-value.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
+import { SportEventComponent } from './sport-event/sport-event.component';
+
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -27,6 +33,11 @@ import { RulesComponent } from './rules/rules.component';
     HomeComponent,
           ReportsComponent,
           RulesComponent,
+          SetButtonValueComponent,
+          ChangePasswordComponent,
+          SportEventComponent,
+       
+        
          
          
     
@@ -34,7 +45,9 @@ import { RulesComponent } from './rules/rules.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BsDatepickerModule.forRoot()
+    BsDatepickerModule.forRoot(),
+    AccordionModule.forRoot(),
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

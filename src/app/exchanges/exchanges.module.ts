@@ -23,7 +23,10 @@ import { TigerVirtualComponent } from './tiger-virtual/tiger-virtual.component';
 import { PokerVirtualComponent } from './poker-virtual/poker-virtual.component';
 import { AmarAkbarVirtualComponent } from './amar-akbar-virtual/amar-akbar-virtual.component';
 import { SixPokerVirtualComponent } from './six-poker-virtual/six-poker-virtual.component';
-
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
+import { BetSlipCasinoComponent } from './bet-slip-casino/bet-slip-casino.component';
+import { MyBetCasinoComponent } from './my-bet-casino/my-bet-casino.component';
 
 const routes: Routes = [
   {path:'teenpatti', component: TeenpattiComponent,},
@@ -50,6 +53,8 @@ const routes: Routes = [
    {path:'poker-virtual', component: PokerVirtualComponent,},
    {path:'amar-akbar-virtual', component:  AmarAkbarVirtualComponent,},
    {path:'six-poker-virtual', component:  SixPokerVirtualComponent,},
+   
+
  
 ]
 
@@ -77,12 +82,18 @@ const routes: Routes = [
     PokerVirtualComponent,
     AmarAkbarVirtualComponent,
     SixPokerVirtualComponent,
+    BetSlipCasinoComponent,
+    MyBetCasinoComponent,
   
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    AccordionModule.forRoot(),
+    ModalModule
   ],
+  providers: [BsModalService],
+  bootstrap: [],
   exports: [RouterModule],
 })
 export class ExchangeGameModule { }

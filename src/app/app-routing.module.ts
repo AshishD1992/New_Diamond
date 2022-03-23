@@ -7,7 +7,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { RulesComponent } from './rules/rules.component';
-
+import { SetButtonValueComponent } from './set-button-value/set-button-value.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 const routes: Routes = [
 
 
@@ -18,6 +19,8 @@ const routes: Routes = [
   {path:'sidenav', component: SidenavComponent,},
   {path:'footer', component: FooterComponent,},
   {path:'rules', component:  RulesComponent,},
+  {path:'set-button-value', component: SetButtonValueComponent,},
+  {path:'change-password', component: ChangePasswordComponent,},
   {
     path: 'sports',
     loadChildren: () =>

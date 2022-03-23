@@ -499,3 +499,41 @@
     margin: -1rem -1rem -1rem auto;
     color: #fff;
 }
+
+
+
+
+ .panel{
+   
+    border: none;
+    border-bottom: 1px solid #fff !important;
+}
+ .card-header.panel-enabled {
+    cursor: pointer;
+}
+.card-header:first-child {
+    border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.modal-body .card-header {
+    padding: 0;
+    background: none;
+    border: none;
+}
+.modal-body .card-header .panel-title {
+    margin-top: 0;
+}
+.panel-title {
+    background: #2c3e50d9;
+    margin: 0;
+    clear: both;
+    padding: 0 8px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 2.1;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+.panel-title, .casino-lastResult h2 {
+    background: #2c3e50d9 !important;
+}
