@@ -37,7 +37,7 @@
             <span  class="suspended">
                 <i  class="fa fa-lock"></i></span><!----></div><!----><!----></div>
                 <div  class="d-flex justify-content-between"><span >0</span><div  class="c-min-max-cs"><b >Min:</b>100 <b >Max:</b>50000 </div><!----><!----></div></div><div  class="casino_odds col-md-6"><div  class="mcb-sec"><!----><div  class="meter-card-set"><h3 >High</h3><img  src="/assets/images/S9.png" class="meter-card"><img  src="/assets/images/10.png" class="meter-card"><img  src="/assets/images/J.png" class="meter-card"><img  src="/assets/images/Q.png" class="meter-card"><img  src="/assets/images/K.png" class="meter-card"><span  class="suspended"><i  class="fa fa-lock"></i></span><!----></div><!----></div><div  class="d-flex justify-content-between"><span >0</span><div  class="c-min-max-cs"><b >Min:</b>100 <b >Max:</b>50000 </div><!----><!----></div></div><!----></div></div><!----></div>
-                <div  class="casino-lastResult"><h2 >Last Results </h2><div  class="clr-sec" data-toggle="modal" data-target="#myModal"><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><!----></div></div><!----></div></div>
+                <div  class="casino-lastResult"><h2 >Last Results </h2><div  class="clr-sec" (click)="openModal(template)"><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><span  class="resultText playera">R</span><!----></div></div><!----></div></div>
 
 
 <div  id="right-sidebar-id" class="right-sidebar casino-right-sidebar teen2sidebar">
@@ -51,51 +51,53 @@
 
 
 
-<div class="modal" id="myModal">
-    <div class="modal-dialog">
-     
-      
-        
-       <div class="modal-content"><div class="modal-header"><h5 class="modal-title">LCasino Meter</h5>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-    </div><!----><div class="modal-body"><div><div class="casino-result-round"><div>
-        <b>Round-Id:</b> 22152801</div><div><b>Match Time:</b> 16/03/22 06:39:41</div></div>
-        <div class="row row5"><div class="col-12">
-            <div class="casino-result-content"><div class="casino-result-content-item text-center">
-                <div class="casino-result-cards"><div class="d-inline-block">
-                    <h4>Low (A-9 without ♠9) <small class="green">33</small></h4>
-                    <div class="casino-result-cards-item">
-                        <img src="assets/images/card/D6.png"></div>
-                        <div class="casino-result-cards-item">
-                            <img src="assets/images/card/S5.png"></div>
-                <div class="casino-result-cards-item">
-                    <img src="assets/images/card/S8.png"></div><!----><!---->
-                    <div class="casino-result-cards-item">
-                        <img src="assets/images/card/H2.png"></div>
-                        <div class="casino-result-cards-item">
-                            <img src="assets/images/card/C4.png"></div>
+
+    <ng-template #template>
+        <div class="modal-content">
+         <div class="modal-header">
+            <h4 class="modal-title pull-left">Casino Meter</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+               <span aria-hidden="true">×</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            
+            <div><div class="casino-result-round"><div>
+                <b>Round-Id:</b> 22152801</div><div><b>Match Time:</b> 16/03/22 06:39:41</div></div>
+                <div class="row row5"><div class="col-12">
+                    <div class="casino-result-content"><div class="casino-result-content-item text-center">
+                        <div class="casino-result-cards"><div class="d-inline-block">
+                            <h4>Low (A-9 without ♠9) <small class="green">33</small></h4>
                             <div class="casino-result-cards-item">
-                                <img src="assets/images/card/C3.png"></div>
+                                <img src="assets/images/card/D6.png"></div>
                                 <div class="casino-result-cards-item">
-                                    <img src="assets/images/card/H5.png"></div>
-
-                </div></div></div>
-
-                    <div class="casino-result-content-item text-center"><div class="casino-result-cards">
-                        <div class="d-inline-block">
-                            <h4>High (10-K without ♠10) <small class="green">35</small></h4>
-                            <div class="casino-result-cards-item">
-                                <img src="assets/images/card/D12.png"></div>
+                                    <img src="assets/images/card/S5.png"></div>
                         <div class="casino-result-cards-item">
-                            <img src="assets/images/card/H12.png"></div>
+                            <img src="assets/images/card/S8.png"></div><!----><!---->
                             <div class="casino-result-cards-item">
-                                <img src="assets/images/card/D11.png"></div><!---->
-
-                                
-                            </div></div></div><!----></div></div></div></div></div><!----></div>
+                                <img src="assets/images/card/H2.png"></div>
+                                <div class="casino-result-cards-item">
+                                    <img src="assets/images/card/C4.png"></div>
+                                    <div class="casino-result-cards-item">
+                                        <img src="assets/images/card/C3.png"></div>
+                                        <div class="casino-result-cards-item">
+                                            <img src="assets/images/card/H5.png"></div>
         
+                        </div></div></div>
         
+                            <div class="casino-result-content-item text-center"><div class="casino-result-cards">
+                                <div class="d-inline-block">
+                                    <h4>High (10-K without ♠10) <small class="green">35</small></h4>
+                                    <div class="casino-result-cards-item">
+                                        <img src="assets/images/card/D12.png"></div>
+                                <div class="casino-result-cards-item">
+                                    <img src="assets/images/card/H12.png"></div>
+                                    <div class="casino-result-cards-item">
+                                        <img src="assets/images/card/D11.png"></div><!---->
         
-      
-    </div>
-  </div>
+                                        
+                                    </div></div></div><!----></div></div></div></div>
+         </div>
+        </div>
+      </ng-template>
+ 

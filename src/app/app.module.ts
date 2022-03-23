@@ -44,20 +44,16 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-<<<<<<< HEAD
     BsDatepickerModule.forRoot(),
     AccordionModule.forRoot(),
     BrowserAnimationsModule,
-=======
-<<<<<<< HEAD
+
     CommonModule,
-    SharedModule
+    SharedModule,
 
     
-=======
     BsDatepickerModule.forRoot()
->>>>>>> c8a7ba1b59a69dceacdcb10339dc350378244717
->>>>>>> cd8f45d31525a8fe42c54521fe382796b8cfdb6b
+
   ],
 
 
