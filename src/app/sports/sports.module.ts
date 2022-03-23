@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
+import { NgModule ,CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { CricketComponent } from './cricket/cricket.component';
 import { FootballComponent } from './football/football.component';
 import { TennisComponent } from './tennis/tennis.component';
 import { ElectionComponent } from './election/election.component';
-
+import { SharedModule } from '../shared.module';
 const routes: Routes = [
   // {
   //   path: '',
@@ -21,12 +21,17 @@ const routes: Routes = [
     CricketComponent,
     FootballComponent,
     TennisComponent,
-    ElectionComponent
+    ElectionComponent,
+  
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
+    SharedModule
   ],
   exports: [RouterModule],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class SportsModule { }

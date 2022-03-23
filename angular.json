@@ -104,7 +104,6 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.css"
-        
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
@@ -115,5 +114,8 @@
       }
     }
   },
-  "defaultProject": "diamond"
+  "defaultProject": "diamond",
+  "cli": {
+    "analytics": false
+  }
 }
