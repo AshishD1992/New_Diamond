@@ -1,6 +1,6 @@
 #sidebar {
     z-index: 999;
-    // position: fixed;
+    
     position: absolute;
 
     width: 210px;
@@ -46,14 +46,12 @@
     background: #bbb;
 }
 .iconsmenu {
-    // display: inline-block;
-    // width: 0;
+    
     display: flex;
     height: 0;
     margin-left: 5px;
     vertical-align: 5px;
-    // content: "";
-    // border-bottom: 5px solid;
+    
     border-right: 5px solid transparent;
     border-top: 0;
     float: right;
@@ -85,3 +83,4 @@ margin: 0;
         display: none;
     }
 }
+

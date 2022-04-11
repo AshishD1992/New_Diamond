@@ -36,6 +36,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./reports/repots.module').then((m) => m.ReportsModule),
   },
+  {
+    path: 'sport-event',
+    loadChildren: () =>
+      import('./sport-event/sport-event.module').then((m) => m.SportEventModule),
+  },
   
 ];
 

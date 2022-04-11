@@ -7,10 +7,7 @@ import { TennisComponent } from './tennis/tennis.component';
 import { ElectionComponent } from './election/election.component';
 import { SharedModule } from '../shared.module';
 const routes: Routes = [
-  // {
-  //   path: '',
-  //   redirectTo: 'cricket',
-  // },
+ 
   {path:'cricket', component:  CricketComponent,},
   {path:'football', component:   FootballComponent,},
   {path:'tennis', component:  TennisComponent,},

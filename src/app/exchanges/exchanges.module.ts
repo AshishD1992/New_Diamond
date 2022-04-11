@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule ,CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { TeenpattiComponent } from './teenpatti/teenpatti.component';
@@ -27,6 +27,8 @@ import { AccordionModule } from 'ngx-bootstrap/accordion';
 import { ModalModule, BsModalService } from 'ngx-bootstrap/modal';
 import { BetSlipCasinoComponent } from './bet-slip-casino/bet-slip-casino.component';
 import { MyBetCasinoComponent } from './my-bet-casino/my-bet-casino.component';
+import { ModalComponent } from './modal/modal.component';
+import { SharedModule } from '../shared.module';
 
 const routes: Routes = [
   {path:'teenpatti', component: TeenpattiComponent,},
@@ -84,16 +86,21 @@ const routes: Routes = [
     SixPokerVirtualComponent,
     BetSlipCasinoComponent,
     MyBetCasinoComponent,
+    ModalComponent,
   
   ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
     AccordionModule.forRoot(),
-    ModalModule
+    ModalModule,
+    SharedModule
   ],
   providers: [BsModalService],
   bootstrap: [],
   exports: [RouterModule],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
 })
 export class ExchangeGameModule { }
