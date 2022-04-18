@@ -29,6 +29,7 @@ import { BetSlipCasinoComponent } from './bet-slip-casino/bet-slip-casino.compon
 import { MyBetCasinoComponent } from './my-bet-casino/my-bet-casino.component';
 import { ModalComponent } from './modal/modal.component';
 import { SharedModule } from '../shared.module';
+import { VideoComponent } from './video/video.component';
 
 const routes: Routes = [
   {path:'teenpatti', component: TeenpattiComponent,},
@@ -55,7 +56,7 @@ const routes: Routes = [
    {path:'poker-virtual', component: PokerVirtualComponent,},
    {path:'amar-akbar-virtual', component:  AmarAkbarVirtualComponent,},
    {path:'six-poker-virtual', component:  SixPokerVirtualComponent,},
-   
+   {path:'video', component: VideoComponent,},
 
  
 ]
@@ -87,6 +88,7 @@ const routes: Routes = [
     BetSlipCasinoComponent,
     MyBetCasinoComponent,
     ModalComponent,
+    VideoComponent,
   
   ],
   imports: [
