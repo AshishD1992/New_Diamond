@@ -5,7 +5,7 @@ import { CricketComponent } from './cricket/cricket.component';
 import { FootballComponent } from './football/football.component';
 import { TennisComponent } from './tennis/tennis.component';
 import { ElectionComponent } from './election/election.component';
-import { SharedModule } from '../shared.module';
+import {  SharedModule } from '../shared.module';
 const routes: Routes = [
  
   {path:'cricket', component:  CricketComponent,},

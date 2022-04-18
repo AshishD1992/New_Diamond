@@ -1,6 +1,7 @@
 import { Component, OnInit, TemplateRef } from '@angular/core';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 
+
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
@@ -17,6 +18,10 @@ export class ModalComponent implements OnInit {
 
 
   ngOnInit(): void {
+    
   }
+  log(isOpened: boolean){
+    console.log(isOpened);
+ }
 
 }

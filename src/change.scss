@@ -537,3 +537,31 @@
 .panel-title, .casino-lastResult h2 {
     background: #2c3e50d9 !important;
 }
+
+@media (max-width: 767px){
+    .casino-container {
+        min-height: auto;
+        width: 100%;
+        margin-left: 0px;
+    }
+    }
+    @media (max-width: 767px){
+        .right-sidebar.casino-right-sidebar {
+            width: 384px;
+            display: none;
+            background-color: #fff;
+            padding: 0;
+            transform: translate3d(0px, -828px, 0px);
+            padding-left: 4px;
+            margin-left: 956px;
+        }  
+    }
+
+    @media (max-width: 767px){
+        .casino-lastResult h2 {
+            padding: 3px;
+            background-color: #2c3e50d9;
+            color: #fff;
+            font-size: 14px;
+        } 
+    }

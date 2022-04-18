@@ -7,7 +7,7 @@
 .wrapper-inner {
     width: 80%;
     float: right;
-    padding: 0px 0px 50px;
+    padding: 0px 0px 5px;
 }
 .user-title {
     font-size: 1.5rem;
@@ -120,4 +120,43 @@ a {
     color: #212529;
     vertical-align: top;
     border-color: #dee2e6;
+}
+
+@media (max-width: 767px){
+.user_screen, tabset.rules-page, .dash_casino {
+    margin: 0 0 68px;
+}
+}
+@media (max-width: 767px){
+    .wrapper-inner {
+        width: 100%;
+        float: right;
+        padding: 0px 0px 5px;
+    }
+    }
+@media (max-width: 767px){
+.wrapper-inner, .detail_screen .col-md-8, .detail_screen .col-md-4 {
+}
+}
+@media (max-width: 767px){
+.user-title {
+    font-size: 1rem;
+    border-radius: 0;
+}
+}
+@media (max-width: 767px){
+.custom-select {
+    margin: 5px 0;
+}
+}
+@media (max-width: 767px){
+.filter button {
+    margin: 0;
+    border-radius: 0 !important;
+}
+}
+@media (max-width: 767px){
+.table-responsive {
+    overflow: auto;
+}
 }

@@ -372,3 +372,21 @@ table {
 .run-amount-container th, .run-amount-container td {
     border: 1px solid #ddd;
 }
+
+@media (max-width: 767px){
+    .modal-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 97%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #0003;
+        border-radius: 0.3rem;
+        outline: 0;
+        margin-left: -1%;
+    }
+}
+
+
